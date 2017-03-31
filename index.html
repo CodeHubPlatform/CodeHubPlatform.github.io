@@ -224,7 +224,6 @@
         
 
 </div>
-
   <section ng-init="init()" class="blue-bg ng-scope" style="
     background: url(https://a.slack-edge.com/d24e/img/apps/home_background@2x.png) center center;
     background-size: 1038px 432px;
@@ -247,7 +246,6 @@
 </div></div></div>
 
 </section>
-
 <section style="text-align: center;font-family: 'Comfortaa', cursive;background: #2196F3;">
 <div style="
     padding-bottom: 53px;
@@ -256,7 +254,7 @@
     font-family: 'Comfortaa', cursive;
     padding-top: 82px;
 " class="center-block">
-<h5>4 Million Students want to learn programming in India, but for most of them english language is a barrier, lets give them some hope...   </h5>
+<h5>4 Million Students want to learn the programming in India, but for most of them english is a barrier, lets give them some hope...   </h5>
 <h2 style="text-align:center">India's First Mobile Application for Programming with multi-lingual support </h2>
 <h3 style="text-align:center">Available in Hindi, Telugu & English </h3>
 <h5>Coming soon in more languages</h5>
@@ -311,25 +309,14 @@
 </div>
 
 <div style="background:black;color:white;text-align:center;padding:10px;font-family: 'Comfortaa', cursive;">
-    © StudyOwl Education Private Limited
+	© StudyOwl Education Private Limited
 
 </div>
-      
-    <p style="
-    padding: 10px;
-">Part of <img src="https://verbalizeit-wordpress.s3.amazonaws.com/wp-content/uploads/2015/08/Fb_Start1.png" style="
-    margin-right: 14px;
-    height: 34px;
-">
-        
-        Messaging Partners <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a></p>
-      
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
-
     <script>
   // Initialize Firebase
 
@@ -339,4 +326,14 @@
 
    $("button").click(function(){
     var bla = $('#phone').val();
-     var url = "https://c
+     var url = "https://control.msg91.com/api/sendhttp.php?authkey=146838A2yEGMDEUn158db941b&message=Download%20Code%20Hub%20today%20..%20https://play.google.com/store/apps/details?id=trycodehub.com&sender=STDOWL&route=4&country=91&mobiles="+bla;
+     
+    $.get(url, function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+    alert("If mobile number is right, download link has been sent to your mobile number ");
+});
+</script>
+  
+  </body>
+</html>
