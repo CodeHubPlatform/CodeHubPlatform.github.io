@@ -242,7 +242,7 @@
 ">CodeHub<br></h1><h2 style="color:white;font-family: 'Maven Pro', sans-serif;">Best way to Browse and Learn Programming</h2></div><div class="width100p margin-top-30px"><p class="color-white margin-bottom5px" style="color:white;">Available on Android, Get it on </p><a href="https://play.google.com/store/apps/details?id=trycodehub.com" target="_blank" analytics-on="click" analytics-event="google-play" analytics-category="google-play-button-in-header" class="link"><img class="img-responsive" ng-src="images/google_play.png" alt="" height="58px" widht="180px" style="margin-left:-5px" src="https://www.appsurfer.com/images/google_play.png"></a></div>
 <p class="color-white margin-bottom5px" style="color:white;">Enter your 10 digit <b>India</b> mobile number and we'll send download link directly to your phone  </p>
 
-<input type="text" id="phone" name="phone" required placeholder="enter phone number" > <button>Submit</button>
+<input type="text" id="phone" name="phone" required placeholder="enter phone number" ><input type="submit" id="btnSubmit" value="Submit">
 </div></div></div>
 
 </section>
@@ -324,7 +324,7 @@
    // the script where you handle the form input.
 
 
-   $("button").click(function(){
+   $("#btnSubmit").button().click(function(){
     var bla = $('#phone').val();
      var url = "https://control.msg91.com/api/sendhttp.php?authkey=146838A2yEGMDEUn158db941b&message=Download%20Code%20Hub%20today%20..%20https://play.google.com/store/apps/details?id=trycodehub.com&sender=STDOWL&route=4&country=91&mobiles="+bla;
      
